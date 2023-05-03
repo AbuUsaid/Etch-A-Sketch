@@ -11,6 +11,8 @@ body {
   width: 960px;
   /* height: auto; */
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .grid-row {
   display: flex;
