@@ -1,4 +1,4 @@
-let sizeOfGrid = 4;
+let sizeOfGrid = 16;
 const resetButton = document.querySelector('button');
 const container = document.querySelector('.container');
 
