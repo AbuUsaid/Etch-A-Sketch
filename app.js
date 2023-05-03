@@ -3,6 +3,9 @@ const container = document.querySelector('.container');
 const resetButton = document.querySelector('button');
 
 const createGrid = (amtOfGrids) => {
+  const wrapper = document.createElement('div'); // we place the grid inside wrapper div
+  wrapper.classList.add('wrapper');
+
   for (let i = 0; i < amtOfGrids; i++) {
     const row = document.createElement('div');
     row.classList.add('grid-row');
@@ -21,8 +24,9 @@ const createGrid = (amtOfGrids) => {
       row.appendChild(gridBox);
     }
 
-    container.appendChild(row);
+    wrapper.appendChild(row); //we add the row inside the wrapper div.
   }
+  container.appendChild(wrapper);
 };
 
 resetButton.addEventListener('click', () => {
@@ -33,7 +37,15 @@ resetButton.addEventListener('click', () => {
       prompt('Pick a smaller number and make sure its 100 or less')
     );
   } //while loop ends
-  createGrid(userSize);
+
+  const wrapper = document.querySelector('.wrapper');
+
+  if (!wrapper) {
+    createGrid(userSize);
+  } else {
+    wrapper.remove(); // this removes the entire wrapper div, so we create the new one after reset.
+    createGrid(userSize);
+  }
 });
 
-createGrid(sizeOfGrid);
+// createGrid(sizeOfGrid);
