@@ -1,5 +1,7 @@
 body {
   width: 100%;
+  background-color:slategrey;
+  font-family: cursive;
 }
 * {
   box-sizing: border-box;
@@ -26,9 +28,10 @@ body {
 }
 
 .btn {
-    background-color: grey;
+    background-color: whitesmoke;
     font-size: 24px;
     border-radius: 12px;
-    margin: 30px;
+    margin-top: 30px;
+    font-family: cursive;
 }
-.btn:hover {background-color: whitesmoke}
+.btn:hover {background-color: grey}
