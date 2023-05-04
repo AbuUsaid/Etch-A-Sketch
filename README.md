@@ -2,7 +2,7 @@
 
 Etch-a-Sketch is a web-based drawing game where you can create drawings by moving your mouse over a grid of squares.<br>
 This project was built using HTML, CSS, and JavaScript.
-&nbsp;&nbsp;&nbsp;[Click here for live preview]()
+&nbsp;&nbsp;&nbsp;[Click here for live preview](https://abuusaid.github.io/Etch-A-Sketch/)
 
 ![Screenshot of a Etch-A-Sketch game in action](assets/EtchAsketch.png)
 
